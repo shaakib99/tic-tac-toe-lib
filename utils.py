@@ -7,4 +7,4 @@ from database import get_db
 
 db_anotation = Annotated[Session, Depends(get_db)]
 
-auth_token_anotation = Annotated[Union(str, None),  Depends(Header)]
+auth_token_anotation = Annotated[Union[str, None],  Depends(Header)]
