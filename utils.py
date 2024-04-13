@@ -3,7 +3,6 @@ from sqlalchemy.orm import Session
 from fastapi import Depends, Header
 
 from database import get_db
-from user.model import UserModel
 
 
 db_anotation = Annotated[Session, Depends(get_db)]
