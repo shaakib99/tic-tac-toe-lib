@@ -9,3 +9,11 @@ class UserModel(BaseModel):
     email: str
     created_at: datetime
     updated_at: datetime
+
+class CreateUserModel(BaseModel):
+    username: str
+    password: Optional[str]
+    email: str
+
+class UpdateUserModel(BaseModel):
+    password: Optional[str]
